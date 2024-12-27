@@ -1,0 +1,108 @@
+:root {
+    --dark-bg: #0a0a0a;
+    --neon-green: #41936a;
+    --text-color: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--dark-bg);
+    color: var(--text-color);
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+button {
+    font-family: inherit;
+}
+
+/* Common Navigation */
+.main-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1.5rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(65, 147, 106, 0.2);
+    z-index: 100;
+}
+
+.nav-left {
+    color: var(--neon-green);
+    font-size: 1rem;
+    letter-spacing: 0.1rem;
+}
+
+.nav-links {
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 0.8rem;
+    letter-spacing: 0.1rem;
+    opacity: 0.6;
+    transition: all 0.3s ease;
+}
+
+.nav-links a:hover, 
+.nav-links a.active {
+    opacity: 1;
+    color: var(--neon-green);
+}
+
+/* Common Components */
+.section-divider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 3rem;
+    gap: 1.5rem;
+}
+
+.section-divider .line {
+    height: 1px;
+    width: 100px;
+    background: rgba(65, 147, 106, 0.3);
+}
+
+.section-divider i {
+    color: var(--neon-green);
+    font-size: 1.5rem;
+    opacity: 0.8;
+}
+
+/* Common Animations */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav-links {
+        gap: 1rem;
+    }
+    
+    .section-divider .line {
+        width: 60px;
+    }
+}
