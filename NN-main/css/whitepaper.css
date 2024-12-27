@@ -1,0 +1,95 @@
+.whitepaper-page {
+    background-color: var(--dark-bg);
+    min-height: 100vh;
+    color: white;
+}
+
+.whitepaper-container {
+    display: flex;
+    padding-top: 80px;
+}
+
+.sidebar {
+    width: 250px;
+    position: fixed;
+    height: calc(100vh - 80px);
+    background: rgba(0, 0, 0, 0.3);
+    border-right: 1px solid rgba(65, 147, 106, 0.2);
+}
+
+.sidebar-content {
+    padding: 2rem;
+    position: sticky;
+    top: 100px;
+}
+
+.nav-menu {
+    list-style: none;
+}
+
+.nav-menu a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 0.8rem 0;
+    opacity: 0.6;
+    transition: all 0.3s ease;
+    font-size: 0.9rem;
+}
+
+.nav-menu a:hover,
+.nav-menu a.active {
+    opacity: 1;
+    color: var(--neon-green);
+}
+
+.content {
+    flex: 1;
+    margin-left: 250px;
+    padding: 2rem 4rem;
+    max-width: 1200px;
+}
+
+section {
+    margin-bottom: 4rem;
+}
+
+section h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: var(--neon-green);
+}
+
+section h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: var(--neon-green);
+}
+
+.version {
+    color: rgba(255, 255, 255, 0.6);
+    margin-bottom: 3rem;
+}
+
+.info-box {
+    background: rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(65, 147, 106, 0.2);
+    padding: 2rem;
+    border-radius: 8px;
+    margin: 2rem 0;
+}
+
+.info-box h3 {
+    color: var(--neon-green);
+    margin-bottom: 1rem;
+}
+
+.info-box ul {
+    list-style: none;
+}
+
+.info-box li {
+    margin-bottom: 0.5rem;
+    opacity: 0.8;
+}
+ 
